@@ -13,6 +13,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1827D41589BBEE8DFA1D89DB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 00AA1DB837258D4C9DA798D5 /* PrivacyInfo.xcprivacy */; };
+		3F8231152CC5E3EB00DB291E /* SampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8231142CC5E3EA00DB291E /* SampleModule.swift */; };
+		3F8231172CC5E42900DB291E /* SampleModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8231162CC5E42900DB291E /* SampleModuleBridge.m */; };
 		7699B88040F8A987B510C191 /* libPods-BridgeToNative-BridgeToNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BridgeToNative-BridgeToNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -28,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00AA1DB837258D4C9DA798D5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = BridgeToNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		00AA1DB837258D4C9DA798D5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = BridgeToNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* BridgeToNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeToNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BridgeToNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeToNativeTests.m; sourceTree = "<group>"; };
@@ -41,6 +43,10 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = BridgeToNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-BridgeToNative-BridgeToNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BridgeToNative-BridgeToNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-BridgeToNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeToNative.debug.xcconfig"; path = "Target Support Files/Pods-BridgeToNative/Pods-BridgeToNative.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8231132CC5E3EA00DB291E /* BridgeToNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BridgeToNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F8231142CC5E3EA00DB291E /* SampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModule.swift; sourceTree = "<group>"; };
+		3F8231162CC5E42900DB291E /* SampleModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleModuleBridge.m; sourceTree = "<group>"; };
+		3F8231182CC5E43D00DB291E /* SampleModuleBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleModuleBridge.h; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-BridgeToNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeToNative.release.xcconfig"; path = "Target Support Files/Pods-BridgeToNative/Pods-BridgeToNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-BridgeToNative-BridgeToNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BridgeToNative-BridgeToNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-BridgeToNative-BridgeToNativeTests/Pods-BridgeToNative-BridgeToNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BridgeToNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BridgeToNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +95,7 @@
 		13B07FAE1A68108700A75B9A /* BridgeToNative */ = {
 			isa = PBXGroup;
 			children = (
+				3F8231122CC5E3BA00DB291E /* bridge */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -97,6 +104,7 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				00AA1DB837258D4C9DA798D5 /* PrivacyInfo.xcprivacy */,
+				3F8231132CC5E3EA00DB291E /* BridgeToNative-Bridging-Header.h */,
 			);
 			name = BridgeToNative;
 			sourceTree = "<group>";
@@ -109,6 +117,16 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-BridgeToNative-BridgeToNativeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8231122CC5E3BA00DB291E /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				3F8231142CC5E3EA00DB291E /* SampleModule.swift */,
+				3F8231162CC5E42900DB291E /* SampleModuleBridge.m */,
+				3F8231182CC5E43D00DB291E /* SampleModuleBridge.h */,
+			);
+			path = bridge;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -211,7 +229,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -398,8 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8231172CC5E42900DB291E /* SampleModuleBridge.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				3F8231152CC5E3EB00DB291E /* SampleModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-BridgeToNative-BridgeToNativeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -445,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-BridgeToNative-BridgeToNativeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = BridgeToNativeTests/Info.plist;
@@ -486,6 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BridgeToNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "BridgeToNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BridgeToNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "BridgeToNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -590,10 +614,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -666,10 +687,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
