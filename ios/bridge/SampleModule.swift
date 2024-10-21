@@ -8,7 +8,7 @@ class SampleModule: NSObject {
     true
   }
   @objc
-  func openMethod(_ value: String, resolver: @escaping RCTResponseSenderBlock) -> Void {
+  func openMethod(_ value: String) -> Void {
     print("Module opened " + value)
   }
 }

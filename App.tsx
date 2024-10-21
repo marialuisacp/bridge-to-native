@@ -31,7 +31,7 @@ const App = (): React.JSX.Element => {
         <Button
           title="Open bridge"
           onPress={() => {
-            SampleModule.openMethod('Test value', () => {});
+            SampleModule.openMethod('Test value');
           }}
         />
       </ScrollView>

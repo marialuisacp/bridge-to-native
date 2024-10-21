@@ -1,6 +1,7 @@
 package com.bridgetonative
 
 import android.app.Application
+import com.bridgetonative.bridge.SamplePackage
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
@@ -17,8 +18,8 @@ class MainApplication : Application(), ReactApplication {
       object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> =
             PackageList(this).packages.apply {
-              // Packages that cannot be autolinked yet can be added manually here, for example:
-              // add(MyReactNativePackage())
+                val contextApp = application.applicationContext
+                add(SamplePackage(contextApp))
             }
 
         override fun getJSMainModuleName(): String = "index"
