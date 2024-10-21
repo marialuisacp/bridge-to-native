@@ -1,79 +1,80 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Native Bridge
 
-# Getting Started
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Fastlane](https://img.shields.io/badge/fastlane-%2382bd4e.svg?style=for-the-badge&logo=fastlane&logoColor=black)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Overview
 
-## Step 1: Start the Metro Server
+This project demonstrates the integration of React Native with native mobile technologies: Kotlin for Android and Swift for iOS. The aim is to provide a simple yet effective example of how to connect React Native components with native functionalities, enhancing the performance and capabilities of your mobile applications.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **Seamless Integration:** Easily call native modules from React Native.
+- **Cross-Platform Support:** Sample implementations for both Android (Kotlin) and iOS (Swift).
+- **Real-World Use Cases:** Examples showcasing practical applications of the bridge.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>= 14.x)
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/ReactNativeNativeBridge.git
+   cd ReactNativeNativeBridge
+   ```
+
+2. **Install dependencies:**
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+npm install
 ```
 
-## Step 2: Start your Application
+### Set up Android:
+1. Open the android/ folder in Android Studio.
+2. Ensure you have the required SDKs installed.
+3. Run the app:
+   npx react-native run-android
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Set up iOS:
+1. Open the ios/ folder in Xcode.
+2. Ensure you have the required pods installed:
+   cd ios && pod install
+3. Run the app:
+   npx react-native run-ios
 
-### For Android
+## Usage
 
-```bash
-# using npm
-npm run android
+Once the app is running, you can explore the following features:
 
-# OR using Yarn
-yarn android
-```
+- Calling Kotlin Functions from React Native: Example code and explanation on how to invoke Kotlin methods directly from your JavaScript code.
+- Using Swift Modules in React Native: Demonstrations of Swift modules and how to utilize them within React Native.
 
-### For iOS
+## Contributing
 
-```bash
-# using npm
-npm run ios
+We welcome contributions! Please read our Contributing Guidelines to get started.
 
-# OR using Yarn
-yarn ios
-```
+## License
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Acknowledgments
 
-## Step 3: Modifying your App
+- React Native Documentation
+- Kotlin Documentation
+- Swift Documentation
 
-Now that you have successfully run the app, let's modify it.
+## Contact
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+For any questions or feedback, feel free to reach out:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- Maria Luísa - contato@malu.dev
+- GitHub: @marialuisacp
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
